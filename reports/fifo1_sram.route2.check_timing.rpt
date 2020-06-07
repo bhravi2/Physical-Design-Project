@@ -1,0 +1,12 @@
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  TCK-012      Warn   1          The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+Total messages: 1, Errors: 0, Warnings: 1, Info: 0
+
+
+Messages
+--------
+Warning: The input port 'rinc' has no clock_relative delay specified. Mode:'func', Corner:'slow'. (TCK-012)
+1

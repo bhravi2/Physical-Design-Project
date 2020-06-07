@@ -1,0 +1,82 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : fifo1_sram
+Version: P-2019.03-SP1-VAL
+Date   : Thu Jun  4 13:05:01 2020
+****************************************
+Information: Doing activity propagation for mode 'func' and corner 'slow' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_slow (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Scenario func_slow, iteration 1: expecting at least 5
+Scenario func_slow, iteration 2: expecting at least 6
+Scenario func_slow, iteration 3: expecting at least 6
+Scenario func_slow, iteration 4: expecting at least 6
+Scenario func_slow, iteration 5: expecting at least 6
+Scenario func_slow, iteration 6: expecting at least 6
+Scenario func_slow, iteration 7: expecting at least 7
+Mode: func
+Corner: slow
+Scenario: func_slow
+Voltage: 0.75
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell sync_r2w/wq1_rptr_reg_11_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.250000 (POW-046)
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_11_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell sync_r2w/wq1_rptr_reg_11_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell sync_r2w/wq1_rptr_reg_9_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.250000 (POW-046)
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_9_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell sync_r2w/wq1_rptr_reg_9_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell sync_r2w/wq1_rptr_reg_8_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.250000 (POW-046)
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_8_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell sync_r2w/wq1_rptr_reg_8_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell sync_r2w/wq1_rptr_reg_7_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.250000 (POW-046)
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_7_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell sync_r2w/wq1_rptr_reg_7_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell sync_r2w/wq1_rptr_reg_6_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.250000 (POW-046)
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_6_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell sync_r2w/wq1_rptr_reg_6_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Fall toggles on pin sync_r2w/wq1_rptr_reg_5_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin sync_r2w/wq2_rptr_reg_5_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin sync_r2w/wq2_rptr_reg_6_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin sync_r2w/wq2_rptr_reg_7_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin sync_r2w/wq2_rptr_reg_8_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Note - message 'POW-069' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 3.31e+09 pW ( 92.7%)
+  Net Switching Power    = 2.60e+08 pW (  7.3%)
+Total Dynamic Power      = 3.57e+09 pW (100.0%)
+
+Cell Leakage Power       = 6.45e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+memory                    3.17e+09               1.51e+08               0.00e+00               3.32e+09    ( 78.7%)      
+black_box                 0.00e+00               0.00e+00               7.67e+07               7.67e+07    (  1.8%)      
+clock_network             9.14e+07               0.00e+00               0.00e+00               9.14e+07    (  2.2%)      
+register                  1.53e+06               9.58e+05               2.41e+07               2.66e+07    (  0.6%)      
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+combinational             5.17e+07               1.07e+08               5.44e+08               7.03e+08    ( 16.7%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     3.31e+09 pW            2.60e+08 pW            6.45e+08 pW            4.22e+09 pW
+1

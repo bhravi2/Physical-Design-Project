@@ -1,0 +1,107 @@
+****************************************
+Report : qor
+Design : fifo1_sram
+Version: P-2019.03-SP1-VAL
+Date   : Thu Jun  4 13:07:23 2020
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+
+Scenario           'func_slow'
+Timing Path Group  'wclk'
+----------------------------------------
+Levels of Logic:                      4
+Critical Path Length:              5.78
+Critical Path Slack:               0.01
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'rclk'
+----------------------------------------
+Levels of Logic:                     12
+Critical Path Length:              2.75
+Critical Path Slack:               0.00
+Critical Path Clk Period:          3.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'INPUTS'
+----------------------------------------
+Levels of Logic:                      2
+Critical Path Length:              9.32
+Critical Path Slack:              -6.68
+Critical Path Clk Period:          3.00
+Total Negative Slack:           -288.67
+No. of Violating Paths:             110
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'OUTPUTS'
+----------------------------------------
+Levels of Logic:                      7
+Critical Path Length:              2.81
+Critical Path Slack:               0.01
+Critical Path Clk Period:          3.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:            274
+Leaf Cell Count:                   1545
+Buf/Inv Cell Count:                 850
+Buf Cell Count:                     298
+Inv Cell Count:                     552
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          1393
+Sequential Cell Count:              152
+Macro Count:                         32
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             4063.00
+Noncombinational Area:          1053.17
+Buf/Inv Area:                   2645.64
+Total Buffer Area:              1611.53
+Total Inverter Area:            1034.11
+Macro/Black Box Area:         380448.80
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                         385564.97
+Cell Area (netlist and physical only):       391161.22
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              2589
+Nets with Violations:                90
+Max Trans Violations:                27
+Max Cap Violations:                  63
+----------------------------------------
+
+1

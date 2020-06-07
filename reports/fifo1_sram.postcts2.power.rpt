@@ -1,0 +1,60 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : fifo1_sram
+Version: P-2019.03-SP1-VAL
+Date   : Thu Jun  4 13:07:23 2020
+****************************************
+Information: Doing activity propagation for mode 'func' and corner 'slow' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_slow (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Scenario func_slow, iteration 1: expecting at least 5
+Scenario func_slow, iteration 2: expecting at least 6
+Scenario func_slow, iteration 3: expecting at least 6
+Scenario func_slow, iteration 4: expecting at least 6
+Scenario func_slow, iteration 5: expecting at least 6
+Scenario func_slow, iteration 6: expecting at least 6
+Scenario func_slow, iteration 7: expecting at least 7
+Mode: func
+Corner: slow
+Scenario: func_slow
+Voltage: 0.75
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 5.23e+08 pW ( 57.6%)
+  Net Switching Power    = 3.85e+08 pW ( 42.4%)
+Total Dynamic Power      = 9.08e+08 pW (100.0%)
+
+Cell Leakage Power       = 3.80e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+memory                    3.47e+08               1.50e+08               0.00e+00               4.97e+08    ( 38.6%)      
+black_box                 0.00e+00               0.00e+00               7.67e+07               7.67e+07    (  6.0%)      
+clock_network             1.20e+08               1.28e+08               1.64e+07               2.65e+08    ( 20.6%)      
+register                  1.05e+06               9.99e+05               2.46e+07               2.67e+07    (  2.1%)      
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+combinational             5.43e+07               1.06e+08               2.63e+08               4.22e+08    ( 32.8%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     5.23e+08 pW            3.85e+08 pW            3.80e+08 pW            1.29e+09 pW
+1
